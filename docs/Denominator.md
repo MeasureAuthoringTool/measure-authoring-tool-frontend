@@ -1,0 +1,6 @@
+`Denominator` (component)
+=========================
+
+
+
+undefined

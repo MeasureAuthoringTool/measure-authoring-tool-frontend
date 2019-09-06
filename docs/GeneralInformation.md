@@ -1,0 +1,6 @@
+`GeneralInformation` (component)
+================================
+
+
+
+undefined

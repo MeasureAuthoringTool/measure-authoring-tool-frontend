@@ -1,0 +1,6 @@
+`Transmission` (component)
+==========================
+
+
+
+undefined

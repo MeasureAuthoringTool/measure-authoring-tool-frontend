@@ -1,0 +1,6 @@
+`NewMeasure` (component)
+========================
+
+
+
+undefined

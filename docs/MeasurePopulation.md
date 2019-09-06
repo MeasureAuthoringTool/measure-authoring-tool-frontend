@@ -1,0 +1,6 @@
+`MeasurePopulation` (component)
+===============================
+
+
+
+undefined

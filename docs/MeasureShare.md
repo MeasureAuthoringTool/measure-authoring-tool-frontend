@@ -1,0 +1,6 @@
+`MeasureShare` (component)
+==========================
+
+
+
+undefined

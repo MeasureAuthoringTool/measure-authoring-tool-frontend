@@ -1,0 +1,6 @@
+`Rationale` (component)
+=======================
+
+
+
+undefined

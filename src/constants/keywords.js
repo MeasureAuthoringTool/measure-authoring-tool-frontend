@@ -1,0 +1,348 @@
+const keywords = [{
+  label: 'after',
+  insertText: 'after',
+}, {
+  label: 'all',
+  insertText: 'all',
+}, {
+  label: 'and',
+  insertText: 'and',
+}, {
+  label: 'as',
+  insertText: 'as',
+}, {
+  label: 'asc',
+  insertText: 'asc',
+}, {
+  label: 'ascending',
+  insertText: 'ascending',
+}, {
+  label: 'before',
+  insertText: 'before',
+}, {
+  label: 'between',
+  insertText: 'between',
+}, {
+  label: 'by',
+  insertText: 'by',
+}, {
+  label: 'called',
+  insertText: 'called',
+}, {
+  label: 'called',
+  insertText: 'called',
+}, {
+  label: 'case',
+  insertText: 'case',
+}, {
+  label: 'cast',
+  insertText: 'cast',
+}, {
+  label: 'Choice',
+  insertText: 'Choice',
+}, {
+  label: 'codesystem',
+  insertText: 'codesystem',
+}, {
+  label: 'codesystems',
+  insertText: 'codesystems',
+}, {
+  label: 'collapse',
+  insertText: 'collapse',
+}, {
+  label: 'Concept',
+  insertText: 'Concept',
+}, {
+  label: 'contains',
+  insertText: 'contains',
+}, {
+  label: 'context',
+  insertText: 'context',
+}, {
+  label: 'convert',
+  insertText: 'convert',
+}, {
+  label: 'date',
+  insertText: 'date',
+}, {
+  label: 'day',
+  insertText: 'day',
+}, {
+  label: 'days',
+  insertText: 'days',
+}, {
+  label: 'default',
+  insertText: 'default',
+}, {
+  label: 'desc',
+  insertText: 'desc',
+}, {
+  label: 'descending',
+  insertText: 'descending',
+}, {
+  label: 'difference',
+  insertText: 'difference',
+}, {
+  label: 'display',
+  insertText: 'display',
+}, {
+  label: 'distinct',
+  insertText: 'distinct',
+}, {
+  label: 'div',
+  insertText: 'div',
+}, {
+  label: 'duration',
+  insertText: 'duration',
+}, {
+  label: 'context',
+  insertText: 'context',
+}, {
+  label: 'during',
+  insertText: 'during',
+}, {
+  label: 'else',
+  insertText: 'else',
+}, {
+  label: 'end',
+  insertText: 'end',
+}, {
+  label: 'ends',
+  insertText: 'ends',
+}, {
+  label: 'except',
+  insertText: 'except',
+}, {
+  label: 'exists',
+  insertText: 'exists',
+}, {
+  label: 'expand',
+  insertText: 'expand',
+}, {
+  label: 'false',
+  insertText: 'false',
+}, {
+  label: 'flatten',
+  insertText: 'flatten',
+}, {
+  label: 'from',
+  insertText: 'from',
+}, {
+  label: 'function',
+  insertText: 'function',
+}, {
+  label: 'hour',
+  insertText: 'hour',
+}, {
+  label: 'hours',
+  insertText: 'hours',
+}, {
+  label: 'if',
+  insertText: 'if',
+}, {
+  label: 'implies',
+  insertText: 'implies',
+}, {
+  label: 'in',
+  insertText: 'in',
+}, {
+  label: 'include',
+  insertText: 'include',
+}, {
+  label: 'includes',
+  insertText: 'includes',
+}, {
+  label: 'included in',
+  insertText: 'included in',
+}, {
+  label: 'intersect',
+  insertText: 'intersect',
+}, {
+  label: 'is',
+  insertText: 'is',
+}, {
+  label: 'Interval',
+  insertText: 'Interval',
+}, {
+  label: 'let',
+  insertText: 'let',
+}, {
+  label: 'library',
+  insertText: 'library',
+}, {
+  label: 'List',
+  insertText: 'List',
+}, {
+  label: 'maximum',
+  insertText: 'maximum',
+}, {
+  label: 'meets',
+  insertText: 'meets',
+}, {
+  label: 'millisecond',
+  insertText: 'millisecond',
+}, {
+  label: 'milliseconds',
+  insertText: 'milliseconds',
+}, {
+  label: 'minimum',
+  insertText: 'minimum',
+}, {
+  label: 'minute',
+  insertText: 'minute',
+}, {
+  label: 'minutes',
+  insertText: 'minutes',
+}, {
+  label: 'mod',
+  insertText: 'mod',
+}, {
+  label: 'month',
+  insertText: 'month',
+}, {
+  label: 'months',
+  insertText: 'months',
+}, {
+  label: 'not',
+  insertText: 'not',
+}, {
+  label: 'null',
+  insertText: 'null',
+}, {
+  label: 'occurs',
+  insertText: 'occurs',
+}, {
+  label: 'of',
+  insertText: 'of',
+}, {
+  label: 'or',
+  insertText: 'or',
+}, {
+  label: 'or after',
+  insertText: 'or after',
+}, {
+  label: 'or before',
+  insertText: 'or before',
+}, {
+  label: 'or less',
+  insertText: 'or less',
+}, {
+  label: 'or more',
+  insertText: 'or more',
+}, {
+  label: 'overlaps',
+  insertText: 'overlaps',
+}, {
+  label: 'parameter',
+  insertText: 'parameter',
+}, {
+  label: 'per',
+  insertText: 'per',
+}, {
+  label: 'predecessor',
+  insertText: 'predecessor',
+}, {
+  label: 'private',
+  insertText: 'private',
+}, {
+  label: 'properly',
+  insertText: 'properly',
+}, {
+  label: 'public',
+  insertText: 'public',
+}, {
+  label: 'return',
+  insertText: 'return',
+}, {
+  label: 'same',
+  insertText: 'same',
+}, {
+  label: 'singleton',
+  insertText: 'singleton',
+}, {
+  label: 'second',
+  insertText: 'second',
+}, {
+  label: 'seconds',
+  insertText: 'seconds',
+}, {
+  label: 'start',
+  insertText: 'start',
+}, {
+  label: 'starts',
+  insertText: 'starts',
+}, {
+  label: 'sort',
+  insertText: 'sort',
+}, {
+  label: 'successor',
+  insertText: 'successor',
+}, {
+  label: 'such that',
+  insertText: 'such that',
+}, {
+  label: 'then',
+  insertText: 'then',
+}, {
+  label: 'time',
+  insertText: 'time',
+}, {
+  label: 'timezone',
+  insertText: 'timezone',
+}, {
+  label: 'to',
+  insertText: 'to',
+}, {
+  label: 'true',
+  insertText: 'true',
+}, {
+  label: 'Tuple',
+  insertText: 'Tuple',
+}, {
+  label: 'union',
+  insertText: 'union',
+}, {
+  label: 'using',
+  insertText: 'using',
+}, {
+  label: 'valueset',
+  insertText: 'valueset',
+}, {
+  label: 'version',
+  insertText: 'version',
+}, {
+  label: 'week',
+  insertText: 'week',
+}, {
+  label: 'weeks',
+  insertText: 'weeks',
+}, {
+  label: 'where',
+  insertText: 'where',
+}, {
+  label: 'when',
+  insertText: 'when',
+}, {
+  label: 'width',
+  insertText: 'width',
+}, {
+  label: 'with',
+  insertText: 'with',
+}, {
+  label: 'within',
+  insertText: 'within',
+}, {
+  label: 'without',
+  insertText: 'without',
+}, {
+  label: 'xor',
+  insertText: 'xor',
+}, {
+  label: 'year',
+  insertText: 'year',
+}, {
+  label: 'years',
+  insertText: 'years',
+}];
+
+export default keywords;

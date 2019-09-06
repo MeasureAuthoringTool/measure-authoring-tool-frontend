@@ -1,0 +1,6 @@
+`MeasureVersion` (component)
+============================
+
+
+
+undefined

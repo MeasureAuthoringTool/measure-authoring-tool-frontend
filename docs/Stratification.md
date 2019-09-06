@@ -1,0 +1,6 @@
+`Stratification` (component)
+============================
+
+
+
+undefined

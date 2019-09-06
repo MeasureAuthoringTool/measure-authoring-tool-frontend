@@ -1,0 +1,6 @@
+`ClinicalRecommendation` (component)
+====================================
+
+
+
+undefined

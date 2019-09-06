@@ -1,0 +1,6 @@
+`RateAggregation` (component)
+=============================
+
+
+
+undefined

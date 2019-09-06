@@ -1,0 +1,6 @@
+`MeasureType` (component)
+=========================
+
+
+
+undefined
